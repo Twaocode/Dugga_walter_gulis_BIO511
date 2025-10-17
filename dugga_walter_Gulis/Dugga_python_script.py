@@ -72,15 +72,15 @@ def main():
     dupes = set()
     seen = set()
     mk =[] 
-    k = 0 
+    h = 0 
     for n in numbers:
         if abs(n) in seen:
-            k += 1
+            h += 1
             dupes.add(n)
             mk.append(abs(n))
         else:
             seen.add(n)
-    print(f'first dupe {mk[0]}' if k != 0 else print("No dupes"))
+    print(f'first dupe {mk[0]}' if h != 0 else print("No dupes"))
     # a for loop and print commande checking the list for duplicates and if one or more cuplicates is found
     # printing a message contaning the first absolute repeated number this is done by making the sets that are then 
     #checked for all numbers and if there is a repeating absolute number said absolute number is added to the premade list
@@ -96,11 +96,11 @@ def main():
 
     hist(df['fpkm_log2'])
     #calling function that plots saves and annotates a histogram of note is that the coloumn studied
-    #should include 
-
+    #should included so call the dataframe then the which column is wanted inside of the dataframe
 
 
 
 if __name__ == "__main__":
     main()
-#safety function, made by teachers, make sure the code imports do get naything weird 
+#safety function, made by teachers, make sure the code imports do get anything weird
+#meaning that only when the script is ran does the functions activate, not when the function is imported
