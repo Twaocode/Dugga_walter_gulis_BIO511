@@ -80,7 +80,7 @@ def main():
             mk.append(abs(n))
         else:
             seen.add(n)
-    print(f'first dupe {mk[0]}' if h != 0 else print("No dupes"))
+    print(f'first dupe {mk[0]}' if h != 0 else print("No repeats"))
     # a for loop and print commande checking the list for duplicates and if one or more cuplicates is found
     # printing a message contaning the first absolute repeated number this is done by making the sets that are then 
     #checked for all numbers and if there is a repeating absolute number said absolute number is added to the premade list
